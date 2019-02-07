@@ -1,0 +1,13 @@
+Sub undeliverable()
+    Sheets("emailstatus").Select
+ 
+Dim selectedRng As Range
+Set selectedRng = Application.Selection
+For Each Cell In selectedRng
+ If IsEmpty(Cell) Then
+    Selection.FormulaR1C1 = _
+        "=IFERROR(VLOOKUP(RC[-5],'Undeliverable Sheet'!C[-11]:C[-10],2,FALSE),Definitions!R11C1)"
+ End If
+ Next Cell
+
+End Sub
