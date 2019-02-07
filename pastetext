@@ -1,0 +1,6 @@
+Sub PastePlainText()
+'
+' PastePlainText Macro
+
+    Selection.PasteAndFormat (wdFormatPlainText)
+End Sub
