@@ -1,0 +1,17 @@
+Sub Mail()
+'
+' Mail Macro
+'
+'
+    ActiveDocument.MailMerge.ViewMailMergeFieldCodes = wdToggle
+    ActiveDocument.MailMerge.DataSource.ActiveRecord = wdLastRecord
+    With ActiveDocument.MailMerge
+        .Destination = wdSendToEmail
+        .SuppressBlankLines = True
+        With .DataSource
+            .FirstRecord = wdDefaultFirstRecord
+            .LastRecord = wdDefaultLastRecord
+        End With
+        .Execute Pause:=False
+    End With
+End Sub
