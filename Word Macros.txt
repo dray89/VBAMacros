@@ -1,0 +1,65 @@
+Sub Highlight()
+'
+' Highlight Macro
+'
+'
+    Selection.Shading.Texture = wdTextureNone
+    Selection.Shading.ForegroundPatternColor = wdColorAutomatic
+    Selection.Shading.BackgroundPatternColor = wdColorYellow
+End Sub
+Sub PasteMatchFormatting()
+'
+' PasteMatchFormatting Macro
+
+    Selection.PasteAndFormat (wdFormatPlainText)
+End Sub
+Sub Mail()
+'
+' Mail Macro
+'
+'
+    ActiveDocument.MailMerge.ViewMailMergeFieldCodes = wdToggle
+    ActiveDocument.MailMerge.DataSource.ActiveRecord = wdLastRecord
+    With ActiveDocument.MailMerge
+        .Destination = wdSendToEmail
+        .SuppressBlankLines = True
+        With .DataSource
+            .FirstRecord = wdDefaultFirstRecord
+            .LastRecord = wdDefaultLastRecord
+        End With
+        .Execute Pause:=False
+    End With
+End Sub
+Sub Test()
+'
+' Test Macro
+'
+'
+    With ActiveDocument.MailMerge
+        .Destination = wdSendToEmail
+        .SuppressBlankLines = True
+        With .DataSource
+            .FirstRecord = wdDefaultFirstRecord
+            .LastRecord = wdDefaultLastRecord
+        End With
+        .Execute Pause:=False
+    End With
+End Sub
+
+
+Sub Macro3()
+'
+' Macro3 Macro
+'
+'
+    ActiveDocument.MailMerge.MainDocumentType = wdEMail
+    With ActiveDocument.MailMerge
+        .Destination = wdSendToEmail
+        .SuppressBlankLines = True
+        With .DataSource
+            .FirstRecord = wdDefaultFirstRecord
+            .LastRecord = wdDefaultLastRecord
+        End With
+        .Execute Pause:=False
+    End With
+End Sub
