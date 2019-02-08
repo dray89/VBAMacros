@@ -44,7 +44,7 @@ Sub FindReplaceClient()
     End With
     With Selection.Find
         .Text = "CLIENT"
-        .Replacement.Text = "Bacharach"
+        .Replacement.Text = "Replace"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -98,7 +98,7 @@ Sub FindReplaceClient()
     End With
     With Selection.Find
         .Text = "CLIENT'S"
-        .Replacement.Text = "Bacharach's"
+        .Replacement.Text = "Replace"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -152,7 +152,7 @@ Selection.Find.ClearFormatting
     End With
     With Selection.Find
         .Text = "CLIENT"
-        .Replacement.Text = "Bacharach"
+        .Replacement.Text = "Replace"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -205,7 +205,7 @@ Selection.Find.ClearFormatting
     End With
     With Selection.Find
         .Text = "CLIENT'S"
-        .Replacement.Text = "Bacharach's"
+        .Replacement.Text = "Replace's"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -258,7 +258,7 @@ Selection.Find.ClearFormatting
     End With
     With Selection.Find
         .Text = "CLIENT's"
-        .Replacement.Text = "Bacharach's"
+        .Replacement.Text = "Replace's"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -312,7 +312,7 @@ Selection.Find.ClearFormatting
     End With
     With Selection.Find
         .Text = "CLIENT"
-        .Replacement.Text = "Bacharach"
+        .Replacement.Text = "Replace"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -365,7 +365,7 @@ Selection.Find.ClearFormatting
     End With
     With Selection.Find
         .Text = "CLIENT"
-        .Replacement.Text = "Bacharach"
+        .Replacement.Text = "Replace"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
