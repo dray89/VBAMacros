@@ -1,9 +1,0 @@
-Sub Highlight()
-'
-' Highlight Macro
-'
-'
-    Selection.Shading.Texture = wdTextureNone
-    Selection.Shading.ForegroundPatternColor = wdColorAutomatic
-    Selection.Shading.BackgroundPatternColor = wdColorYellow
-End Sub
