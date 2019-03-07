@@ -1,5 +1,4 @@
 # VBAMacros
-My commonly used VBA macros
 
 emailundeliverable.txt: VLookup Macro. Updates an excel spreadsheet with "Undeliverable" for all undeliverable emails and Email Sent confirmation otherwise. Skips over cells with entries. 
 	
