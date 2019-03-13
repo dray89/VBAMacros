@@ -1,0 +1,12 @@
+Sub Input_Boxes()
+
+Dim value As Variant
+Dim cellrange As Variant
+
+value = InputBox("What do you want in the cell?")
+
+cellrange = InputBox("For what cell range?")
+
+Range(cellrange).Value = clientname
+
+End Sub
